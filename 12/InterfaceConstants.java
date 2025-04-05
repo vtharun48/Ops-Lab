@@ -1,7 +1,7 @@
-// Demonstration of interface with constants
+
 
 interface DatabaseConfig {
-    // Constants
+    
     String DATABASE_URL = "jdbc:mysql://localhost:3306/mydb";
     String USERNAME = "admin";
     String PASSWORD = "password";
@@ -50,7 +50,7 @@ public class InterfaceConstants {
         db.executeQuery("SELECT * FROM users");
         db.disconnect();
         
-        // Accessing interface constants directly
+   
         System.out.println("\nDatabase Config Constants:");
         System.out.println("URL: " + DatabaseConfig.DATABASE_URL);
         System.out.println("Username: " + DatabaseConfig.USERNAME);
